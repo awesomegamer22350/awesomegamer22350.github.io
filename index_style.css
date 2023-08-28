@@ -61,16 +61,15 @@
 	position: absolute;
 	top: -370px;
 	text-align: center; 
+	word-spacing: 15px;
+	line-height: 130px;
 	color: #ffefa5; 
-	font-size: calc(40px + 7.5vw); 
-	font-family: cursive;
+	font-size: calc(60px + 5.5vw); 
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: 50;
 	margin: 0;
 }
 
-a {
-	color: #ffefa5; 
-	text-decoration: none}
 .highlightthis, .putontop { /*to highlight the text across the image to make it eye catching*/
 	position: relative;
 }
@@ -80,7 +79,7 @@ a {
 .highlightthis:before {
 	content: " ";
 	display: block;
-	height: 90%;
+	height: calc(6vw + 50px);
 	width: 100%;
 	margin-left: -3px;
 	margin-right: -3px;
@@ -88,10 +87,10 @@ a {
 	opacity: 60%;
 	background: #ffd500;
 	transform: rotate(2deg);
-	top: -1px;
-	left: -1px;
+	top: calc(20px - 3.5vw);
+	left: -13px;
 	border-radius: 20% 25% 20% 24%;
-	padding: 10px 3px 3px 10px;
+	padding: 25px 15px 25px 15px;
 }
 
 
