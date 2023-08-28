@@ -5,6 +5,7 @@ body{
 .navigation{ /*Navigation bar*/
 	position: sticky; /*remains at the top of the screen*/
 	min-height: calc(80px + 2vw);
+	height: fit-content;
 	top: 0;
 	z-index: 3; /*goes on top of banners*/
 }
