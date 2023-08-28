@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maunga Club</title>
+	<!-- Each of the css files used for this page -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="pages.css">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+	<style>
+		.navigation /*Navigation bar properties*/
+			{background-color: #29cb13}
+		.navigation img { /*Logo Button*/
+			background-color:#22ff00;
+			border: 5px solid #009e00}
+		.navigation img:hover {
+			background-color:#1ac100;
+			border: 5px solid #006a00;}
+		.dropbtn  /*dropdown button properties*/
+			{background-color: #28dd10;
+			color: white}
+		.dropdown_content 
+			{background-color: #22b80e}
+		.dropdown_content a
+			{color: black}
+		.dropdown:hover .dropbtn  /*change the colour of the button*/
+			{background-color: #1cea01}
+		.dropdown_content a:hover 
+			{background-color: #00a008}
+		.Banner
+			{background-color: #26bb12}
+		.information1 h3
+			{color: #2aab19}
+		.button a
+		{border: 3px solid #009e00;
+		color: #29cb13}
+		.button a:hover{
+			border: 3px solid #1c8d0d;
+			background-color: #02bd02;
+			color: white}
+	</style>
+</head>
+<body>
+	<div class="navigation"> <!-- navigation bar -->
+		<a href="index.html"><img src="images/logo.png" alt="Image: logo.png"></a>
+		<div class="dropdown">
+			<button class="dropbtn">≡</button>
+			<div class="dropdown_content">
+				<a href="index.html">Home</a>
+				<a href="kakapo.html">Kākāpō</a>
+				<a href="pukeko.html">Pūkeko</a>
+				<a href="kereru.html">Kererū</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="bigimg"> <!-- background image at top of page -->
+		<img src="images/kakapo/cabin_view.jpg" alt="Image: Image: Kakapo View Image">
+	</div>
+
+	<article class="Bannerholder"> <!-- the banner that stretches across the image -->
+		<div class="Banner">
+			<img src="images/kakapo/Kakapo_Bird.png" alt="Image: Kakapo Bird Image">
+			<h1>Kākāpō Chalet!</h1>
+			<img src="images/kakapo/Kakapo_Bird.png" alt="Image: Kakapo Bird Image">
+		</div>
+	</article>
+
+	<section class="information1"> <!-- information block 1 -->
+		<h1>We can accommodate</h1>
+		<h2>Up to</h2>
+		<a href="https://en.wikipedia.org/wiki/10" target=”_blank”><h3>10</h3></a>
+		<h2>Adults!</h2>
+		<a href="https://en.wikipedia.org/wiki/30_(number)" target=”_blank”><h3>30</h3></a>
+		<h2>Children!</h2>
+		<h4>This is the largest of the chalets featuring<br>a large kitchen, dining and living area and great amenities!</h4>
+	</section>
+
+	<hr class="dotted">
+
+	<section class="information2"> <!-- information block 2 with additional info -->
+		<h2>More info</h2>
+		<ul>
+			<li>Only Club members can access the chalets.</li>
+			<li>All chalet bookings must be from Friday to Sunday.</li>
+			<li>Chalets offer shared accommodation for between 6 and 40 people per chalet.</li>
+			<li>All three chalets are on the mountain, so you can ski to and from the chalets.</li>
+			<li>The mountain gives 550 hectares of skiing/snowboarding area, and the longest
+				ski/snowboard season in New Zealand.</li>
+		</ul>
+	</section>
+
+	<div class="button"> <!-- button to home -->
+		<a href="index.html">Home</a>
+	</div>
+
+	<hr class="dotted">
+
+	<section class="gallery_section"> <!-- gallery -->
+		<h2>Visualise how Maunga club's Kakapo Chalet could fit you!</h2>
+		<div class="gallery_container">
+			<a data-fancybox="gallery" href="images/kakapo/bunk_room.jpg"><img src="images/kakapo/bunk_room_thumb.jpg" alt="Image: Kakapo Bunk Image"></a>
+			<a data-fancybox="gallery" href="images/kakapo/cabin_exterior.jpg"><img src="images/kakapo/cabin_exterior_thumb.jpg" alt="Image: Kakapo Exterior Image"></a>
+			<a data-fancybox="gallery" href="images/kakapo/cabin_view.jpg"><img src="images/kakapo/cabin_view_thumb.jpg" alt="Image: Kakapo View Image"></a>
+			<a data-fancybox="gallery" href="images/kakapo/hallway.jpg"><img src="images/kakapo/hallway_thumb.jpg" alt="Image: Kakapo Hallway Image"></a>
+		</div>
+		<h4>Click on a thumbnail to view the full image (Some thumbnails may be hidden depending on the size of your screen, you may still see the full images by cycling to them.)<br>
+			Return to the home page to view our full gallery of images</h4>
+	</section>
+
+	<hr class="dotted">
+
+	<section class="formcontainer">
+		<form> <!-- information form to sign up, currently does not send information anywhere-->
+			<h3>Fill in this form to send us your information to sign up for one of our wonderful chalets!</h3>
+			<div class="formsection">
+				<div class="textinputs">
+					<p><label for="fullname" class="fullname">Full Name</label>
+					<input id="fullname" type="text"></p>
+					<p><label for="address" class="address">Address</label>
+					<input id="address" type="text"></p>
+					<p><label for="chaletbooked" class="chaletbooked">Chalet</label>
+						<select id="chaletbooked" name="chaletbooked">
+							<option value="kakapo">Kākāpō</option>
+							<option value="pukeko">Pūkeko</option>
+							<option value="kereru">Kererū</option>
+						</select>
+					</p>
+				</div>
+				<div class="fileinputs">
+					<p class="input-file-wrapper">
+					<label for="proofaddress">Proof of address (eg. Power Bill)</label>
+					<input type="file" name="proofaddress" id="proofaddress"></p>
+					<p class="input-file-wrapper">
+					<label for="identification">Proof of ID (Driver's License or Passport)</label>
+					<input type="file" name="identification" id="identification"></p>
+				</div>
+			</div>
+			<div class="savebutton">
+				<button>Save</button>
+			</div>
+		</form>
+	</section>
+
+
+	<footer> <!-- footer at the bottom of page -->
+		<p><small>Contact us at maungaclub@maungaclub.maungaclub</small></p>
+	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+</html>

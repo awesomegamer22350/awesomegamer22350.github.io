@@ -1,0 +1,207 @@
+hr.dotted 
+	{border-top: 3px dotted #bbb}
+a 
+	{text-decoration: none}
+
+
+.bigimg{ /*properties of the background image at the top of the page*/
+	display: flex;
+	justify-content: center;
+	max-height: 1510px;
+	overflow: hidden
+}
+.bigimg img{
+	min-width: calc(1040px + 20vw);
+	object-fit: cover
+}
+
+.Bannerholder{ /*the container of the banner, allows the banner to be centered without being the length of the screen*/
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	top: calc(320px + 11vw)
+}
+.Banner{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	width: 80%;
+	margin-left: auto;
+	padding: calc(5px + 3vw);
+	margin-right: auto
+}
+.Banner h1{
+	display: inline-block;
+	color: white; 
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	font-size: calc(17px + 3vw); 
+	font-family: Arial, Helvetica, sans-serif; 
+}
+.Banner img{
+	display: inline-block;
+	height: calc(85px + 4vw)
+}
+
+
+.information1{  /*information block 1*/
+	text-align: center;
+	margin-left: 48px;
+	margin-right: 48px;
+	margin-top: 100px}
+.information1 h1{
+	font-size: calc(50px + 1vw);
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 32px;
+	margin-bottom: 64px}
+.information1 h2{
+	font-size: calc(38px + 1vw);
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+	margin-bottom: 0px}
+.information1 h3{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: calc(150px + 1vw);
+	margin-top: 16px;
+	margin-bottom: 0px}
+.information1 h4{
+	font-size: calc(30px + 1vw);
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 50px;
+	margin-bottom: 64px}
+
+
+.information2 { /*information block 2 with additional info*/
+	font-size: 24px; 
+	font-family: Arial, Helvetica, sans-serif; 
+	margin-top: calc(68px - 2vw);
+	margin-bottom: 72px;
+	text-align: center
+}
+.information2 li{ /*properties of the listed text*/
+	text-align: justify; /*makes spaces stretch so that the text reaches the end of the div for consistency*/
+	line-height: calc(45px - 1vw);
+	margin-left: 12vw;
+	margin-right: 12vw;
+	margin-bottom: 10px
+}
+
+
+.button a{ /*properties of the home button under*/
+	border-radius: 2px;
+	display: block;
+	width: 160px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 26px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 17px 34px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 60px
+}
+
+
+.gallery_section{ /*properties of the section that contains the text related to the gallery and the gallery itself*/
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 100px;
+}
+.gallery_section h2{ /*properties of the text around the gallery*/
+	font-size: 40px;
+	font-weight: bold;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: calc(40px + 2vw);
+	margin-bottom: 40px
+}
+.gallery_section h3{
+	font-weight: bold;
+	font-size: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 10px;
+	margin-bottom: 20px
+}
+.gallery_section h4{
+	font-size: 22px;
+	font-weight: normal;
+	line-height: calc(25px + 0.5vw);
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 20px;
+	margin-bottom: 40px
+}
+.gallery_container{ /*the gallery*/
+	display: flex;
+	max-width: 90%;
+	max-height: 410px;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 110px
+}
+.gallery_container img{ /*properties of the thumbnails in gallery*/
+	width: 288px;
+	height: 192px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px
+}
+.gallery_container img:hover{ /*makes thumbnail larger on hover, compensates for additional size with reducing margin*/
+	width: 298px;
+	height: 202px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+.formsection{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	grid-gap: 20px;
+	line-height: calc(45px - 1vw);
+}
+.formcontainer{
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+form{ /* information form to sign up, currently does not send information anywhere*/
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: lightgray;
+	max-width: 700px;
+	align-content: center;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-top: 70px;
+	margin-bottom: 88px;
+}
+form h3{
+	text-align: center;
+	font-size: 26px;
+}
+.fileinputs{
+	max-width: 300px;
+}
+.savebutton{
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+}
+.savebutton button{
+	font-size: 15px;
+}
+

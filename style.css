@@ -1,0 +1,81 @@
+body{
+	margin:0px;
+}
+
+.navigation{ /*Navigation bar*/
+	position: sticky; /*remains at the top of the screen*/
+	min-height: calc(80px + 2vw);
+	top: 0;
+	z-index: 3; /*goes on top of banners*/
+}
+
+.navigation img { /*Logo properties*/
+	transition: background-color 0.3s ease;
+	width: calc(180px + 6vw);
+	height: calc(55px + 2vw);
+	border-radius: 10px;
+	float: left;
+	margin-left: 1.125vw;
+	margin-top: 10px;
+}
+
+
+.dropdown {
+	position: relative;
+	float: right;
+}
+
+.dropbtn { /*dropdown button properties*/
+	color: white;
+	font-size: 40px;
+	border: none;
+	cursor: pointer;
+	margin-right: 0.5vw;
+	padding-top: calc(17.5px + 1vw);
+	padding-bottom: calc(17.5px + 1vw);
+	padding-left: calc(30px + 1vw);
+	padding-right: calc(30px + 1vw);
+}
+
+.dropdown_content {
+	display: none; /*Hide the dropdown bar unless hovering over dropdown button*/
+	position: absolute;
+	width: calc(180px + 5vw);
+	right: 0;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	margin-right: 0.5vw;
+}
+
+.dropdown_content a {
+	display: block;
+	color: black;
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.dropdown:hover .dropdown_content { /*show the dropdown content if the button or the content itself is being hovered over*/
+	display: block;
+}
+
+  
+footer { /*Footer at the end of each page*/
+	display: flex;
+	background-color: #ed107f;
+	justify-content: center;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: calc(12px + 2vw);
+	padding-bottom: calc(12px + 2vw);
+}
+
+footer p{
+	color: white;
+	font-size: 24.2px;
+	font-family: Arial, Helvetica, sans-serif;
+}

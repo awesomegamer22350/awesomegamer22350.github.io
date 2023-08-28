@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maunga Club</title>
+	<!-- Each of the css files used for this page -->
+	<link rel="stylesheet" href="style.css"> 
+	<link rel="stylesheet" href="index_style.css">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+</head>
+<body>
+	<div class="navigation"> <!-- navigation bar -->
+		<a href="index.html"><img src="images/logo.png" alt="Image: logo.png"></a>
+		<div class="dropdown">
+			<button class="dropbtn">≡</button>
+			<div class="dropdown_content">
+				<a href="index.html">Home</a>
+				<a href="kakapo.html">Kākāpō</a>
+				<a href="pukeko.html">Pūkeko</a>
+				<a href="Kereru.html">Kererū</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="bigimg"> <!-- background image at top of page -->
+		<img src="images/maunga_club_cabin.jpg" alt="Image: maunga_club_cabin">
+	</div>
+
+	<article class="Word_Banner"> <!-- the text that stretches across the image -->
+		<h1><span class="highlightthis"><span class="putontop">Maunga</span></span> <span class="highlightthis"><span class="putontop">Club!</span></span></h1>
+	</article>
+	
+	<div class="mainstuff">
+		<div class="chaletsection"> <!-- short briefs on each chalet and links to the pages-->
+			<article class="chalet"> <!-- each chalet brief has similar properties, thus can use the same article class and general structure-->
+				<div class="chalettext"> <!-- properties for text -->
+					<h2>Kākāpō Chalet</h2>
+					<ul>
+						<li>Largest of the chalets</li>
+						<li>Large kitchen, dining, and living area</li>
+						<li>Great amenities</li>
+					</ul>
+				</div>
+				<a data-fancybox="disconnected_gallery" href="images/kakapo/bunk_room.jpg"><img src="images/kakapo/bunk_room_thumb.jpg" alt="Image: Kakapo Bunk Image"></a>
+				<div class="chaletbutton">
+					<a href="kakapo.html">View More</a>
+				</div>
+			</article>
+			<article class="chalet">
+				<div class="chalettext">
+					<h2>Pūkeko Chalet</h2>
+					<ul>
+						<li>Great for large groups<br>and/or families wanting <br> a chalet to themselves</li>
+						<li>Limits on adult/child number ensure <br>comfortable stay</li>
+					</ul>
+				</div>
+				<a data-fancybox="disconnected_gallery" href="images/pukeko/adult_bedroom.jpg"><img src="images/pukeko/adult_bedroom_thumb.jpg" alt="Image: Pukeko Cabin Image"></a>
+				<div class="chaletbutton">
+					<a href="pukeko.html">View More</a>
+				</div>
+			</article>
+			<article class="chalet">
+				<div class="chalettext">
+					<h2>Kererū Chalet</h2>
+					<ul>
+						<li>Great option for a family</li>
+						<li>2 bedrooms</li>
+						<li>Perfect for families with 2-4 children</li>
+						<li>Separate living area</li>
+					</ul>
+				</div>
+				<a data-fancybox="disconnected_gallery" href="images/kereru/adult_bedroom.jpg"><img src="images/kereru/adult_bedroom_thumb.jpg" alt="Image: Kereru Bedroom Image"></a>
+				<div class="chaletbutton">
+					<a href="kereru.html">View More</a>
+				</div>
+			</article>
+		</div>
+
+
+		
+		<article class="gallery_container"> <!-- the gallery -->
+			<div class="gallerytext"> <!-- the properties of the text above the gallery -->
+				<h2>Gallery</h2>
+				<p>(Some thumbnails may be hidden depending on the size of your screen, you may still see the full images by cycling to them.)</p>
+			</div>
+			<a data-fancybox="gallery" href="images/kakapo/bunk_room.jpg"><img src="images/kakapo/bunk_room_thumb.jpg" alt="Image: Kakapo Bunk Image"></a>
+			<a data-fancybox="gallery" href="images/kakapo/cabin_exterior.jpg"><img src="images/kakapo/cabin_exterior_thumb.jpg" alt="Image: Kakapo Exterior Image"></a>
+			<a data-fancybox="gallery" href="images/kakapo/cabin_view.jpg"><img src="images/kakapo/cabin_view_thumb.jpg" alt="Image: Kakapo View Image"></a>
+			<a data-fancybox="gallery" href="images/kakapo/hallway.jpg"><img src="images/kakapo/hallway_thumb.jpg" alt="Image: Kakapo Hallway Image"></a>
+			<a data-fancybox="gallery" href="images/kereru/adult_bedroom.jpg"><img src="images/kereru/adult_bedroom_thumb.jpg" alt="Image: Kereru Bedroom Image"></a>
+			<a data-fancybox="gallery" href="images/kereru/cabin_exterior.jpg"><img src="images/kereru/cabin_exterior_thumb.jpg" alt="Image: Kereru Exterior Image"></a>
+			<a data-fancybox="gallery" href="images/kereru/kids_bedroom.jpg"><img src="images/kereru/kids_bedroom_thumb.jpg" alt="Image: Kereru Kid's room Image"></a>
+			<a data-fancybox="gallery" href="images/kereru/kitchen.jpg"><img src="images/kereru/kitchen_thumb.jpg" alt="Image: Kereru Kitchen Image"></a>
+			<a data-fancybox="gallery" href="images/pukeko/adult_bedroom.jpg"><img src="images/pukeko/adult_bedroom_thumb.jpg" alt="Image: Pukeko Bedroom Image"></a>
+			<a data-fancybox="gallery" href="images/pukeko/bathroom.jpg"><img src="images/pukeko/bathroom_thumb.jpg" alt="Image: Pukeko Bathroom Image"></a>
+			<a data-fancybox="gallery" href="images/pukeko/chalet_exterior.jpg"><img src="images/pukeko/chalet_exterior_thumb.jpg" alt="Image: Pukeko Exterior Image"></a>
+			<a data-fancybox="gallery" href="images/pukeko/chalet_view.jpg"><img src="images/pukeko/chalet_view_thumb.jpg" alt="Image: Pukeko View Image"></a>
+		</article>
+
+		<section class="formsection"> <!-- information form to sign up, currently does not send information anywhere-->
+			<h2>Fill in this form to send us your information to sign up for one of our wonderful chalets!</h2>
+			<form>
+				<div class="textinputs">
+					<p><label for="fullname" class="fullname">Full Name</label>
+					<input id="fullname" type="text"></p>
+					<p><label for="address" class="address">Address</label>
+					<input id="address" type="text"></p>
+					<p><label for="chaletbooked" class="chaletbooked">Chalet</label>
+						<select id="chaletbooked" name="chaletbooked">
+							<option value="blank" label=" "></option>
+							<option value="kakapo">Kākāpō</option>
+							<option value="pukeko">Pūkeko</option>
+							<option value="kereru">Kererū</option>
+						</select>
+					</p>
+				</div>
+				<div class="fileinputs">
+					<p class="input-file-wrapper">
+					<label for="proofaddress">Proof of address (eg. Power Bill)</label>
+					<input type="file" name="proofaddress" id="proofaddress"></p>
+					<p class="input-file-wrapper">
+					<label for="identification">Proof of ID (Driver's License or Passport)</label>
+					<input type="file" name="identification" id="identification"></p>
+					</div>
+			</form>
+			<div class="savebutton">
+				<button>Save</button>
+			</div>
+		</section>
+	</div>
+
+
+	<footer> <!-- footer at bottom of page -->
+		<p><small>Contact us at maungaclub@maungaclub.maungaclub</small></p>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+</html>

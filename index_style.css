@@ -1,0 +1,245 @@
+
+/*Navigation bar properties unique to the home page that cannot be included in the general style.css mage (mostly color properties)*/
+.navigation{ 
+	background-color: #451a00;
+}
+
+.navigation img{
+	background-color:#8d3600;
+	border: 5px solid #6b2900;
+}
+
+.navigation img:hover {
+	background-color:#712b00;
+	border: 5px solid #5e2400;
+}
+
+.dropbtn{
+	background-color: #8d3600;
+}
+
+.dropdown_content {
+	background-color: #6b2900;
+}
+
+.dropdown_content a{
+	color: rgb(253, 237, 197);
+}
+
+.dropdown:hover .dropbtn { /*change the colour of the button*/
+	background-color: #782e00;
+}
+
+.dropdown_content a:hover 
+	{background-color: #622500}
+
+
+/*Home Page Properties*/
+
+.bigimg{ /*The background image*/
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	overflow: hidden;
+}
+
+.bigimg img{ /*zooms in on the image when screen is smaller*/
+	min-width: calc(1040px + 40vw);
+	height: calc(650px + 25vw);
+	object-fit: cover;
+	object-position: 0 100%;
+}
+
+
+.Word_Banner{ 
+	position: sticky;
+	bottom: 120px;
+	z-index: 1; /*the words should be under the navigation bar which has a higher z-index than 1*/
+}
+.Word_Banner h1{ /*position and properties of text across image*/
+	width: 100%;
+	position: absolute;
+	top: -370px;
+	text-align: center; 
+	color: #ffefa5; 
+	font-size: calc(40px + 7.5vw); 
+	font-family: cursive;
+	font-weight: 50;
+	margin: 0;
+}
+
+a {
+	color: #ffefa5; 
+	text-decoration: none}
+.highlightthis, .putontop { /*to highlight the text across the image to make it eye catching*/
+	position: relative;
+}
+.highlightthis {
+	display: inline-block;
+}
+.highlightthis:before {
+	content: " ";
+	display: block;
+	height: 90%;
+	width: 100%;
+	margin-left: -3px;
+	margin-right: -3px;
+	position: absolute;
+	opacity: 60%;
+	background: #ffd500;
+	transform: rotate(2deg);
+	top: -1px;
+	left: -1px;
+	border-radius: 20% 25% 20% 24%;
+	padding: 10px 3px 3px 10px;
+}
+
+
+.chaletsection{ /*contains the section block that contains short briefs on each Chalet*/
+	width: 100%;
+	background-color: #813201;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.chalet{ /*each individual block detailing each Chalet*/
+	width: 350px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #96572b;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.chalettext{
+	height: 270px;
+	width: 100%;
+}
+.chalet h2{
+	font-size: 28px;
+	padding-bottom: 10px;
+}
+
+.chalet li {
+    font-size: 1.5em;
+    font-weight: bold;
+	text-align: left;
+}
+.chalet img{
+	width: 95%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.chalet img:hover{
+	width: 100%;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.chaletbutton{
+	max-width: 1100px;
+	text-align: center;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.chaletbutton a { 
+	border: 6px solid #474747;
+	border-radius: 14px;
+	display: inline-block;
+	color: rgb(18, 18, 18);
+	background-color: #636363;
+	text-decoration: none;
+	font-size: 19px;
+	font-family: Arial, Helvetica, sans-serif;
+	white-space: nowrap;
+	padding: 20px 15px;
+	transition: background-color 0.3s ease;
+}
+.chaletbutton a:hover{
+	border: 6px solid #626262;
+	background-color: #787878;
+}
+
+
+.gallerytext{ /*properties of the text above the gallery*/
+	display: block;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.gallerytext h2{ 
+	font-size: 48px;
+}
+.gallerytext p {
+    font-size: 1.17em;
+    font-weight: bold
+}
+
+.gallery_container{ /*gallery*/
+	max-width: 920px;
+	max-height: 624px;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: calc(52px - 2vw);
+	margin-bottom: calc(62px - 2vw);
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+	justify-content: center;
+	align-items: center;
+}
+.gallery_container img{ /*properties of the thumbnails in gallery*/
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-top: 2.5px;
+	margin-bottom: 2.5px;
+	width: 200px;
+	height: 133px;
+}
+.gallery_container img:hover{ /*properties of the thumbnails in gallery*/
+	width: 205px;
+	height: 138px;
+	margin-left: 1.5px;
+	margin-right: 1.5px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+.formsection{ /*holds the form*/
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: lightgray;
+	max-width: 700px;
+	align-content: center;
+	margin: auto;
+	padding: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-bottom: 88px;
+}
+.formsection h2{ /*text above the form*/
+	text-align: center;
+	font-size: 26px;
+}
+form{ /*the form*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	grid-gap: 20px;
+	line-height: calc(45px - 1vw);
+}
+.fileinputs{
+	max-width: 300px;
+}
+.savebutton{
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+}
+.savebutton button{
+	font-size: 15px;
+}
